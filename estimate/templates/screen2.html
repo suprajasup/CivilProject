@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" type="text/css" href="  style.css"> -->
+		
+		<style>
+			body{
+				background-color: #0E425A;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.column1 {
+				width: 60%;
+				height: 600px;
+			}
+			.column2 {
+				width: 40%;
+				height: 600px;
+				padding-right: 2rem;
+			}
+			.nav-link {
+				font-size: 1.1rem;
+				margin-right: .4rem;
+				letter-spacing: 1.25px;
+				margin-top: .2rem;
+				color: #333;
+			}
+			.signup-profile-img {
+				width: 30%;
+				height: 30%;
+				/*border: 10px solid #e5e5e5;*/
+				/*top: 50%;
+				left: 50%;
+				transform: translate(-10%, -70%);*/
+			}
+			.signup-form input {
+				width: 60%;
+			}
+			.signup-form button {
+				background-color: #0E425A;
+				border-color: #0E425A;
+				border-radius: 20px;
+				padding: .4rem 1.6rem .6rem 1.6rem;
+				font-weight: 600;
+				margin-top: .2rem;
+				margin-right: .2rem;
+			}
+			.forgot-password {
+				margin-top: .5rem;
+			}
+
+			.upload-profile-photo {
+				width: 18%;
+				margin-top: 1rem;
+				margin-left: .8rem;
+			}
+		</style>
+	</head>
+	<body style="text-align: center;">
+		<div class="container" style="padding-right: 60px; padding-left: 60px; " >
+			
+			<div style="margin: 40px; box-shadow: 0 1px 7px 0.05px #ac8fe3; height: 600px; background-color: white; text-align:center; border-radius: 20px;" style="width: 18rem;">
+				<div class ="row">
+					<div class="column1" style="background-color:#7FAABD; border-radius:20px;  border-bottom-right-radius: 300px; border-top-right-radius: 300px;">
+						<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa502; height: 5rem; width: 60rem;">
+							<a class="navbar-brand" href="#" style="color: black">LOGO</a>
+							<div class="collapse navbar-collapse">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<img src="{% static 'img/user_profile_female.jpg' %}" class="rounded-circle" alt="Profile Pic" style="width: 20%; height: 20%; margin-top: 4rem;"><br>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<div class="d-flex justify-content-center align-items-center flex-column" style="margin-top: 5.5rem;">
+						<img src="{% static 'img/user_profile_female.jpg' %}" class="rounded-circle " alt="Profile Pic" style="width: 50%;height: 200px;"><br>
+						<input type="file" class="upload-profile-photo"  id="exampleInputPassword1" placeholder="Upload Profile Pic">
+						</div>
+					</div>
+					<div class="column2">
+						<nav class="navbar navbar-expand-lg bg-light bg-transparent" style="padding-top:30%">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							</button>
+						</nav><br><br>
+						<div>
+							<!-- <img src="{% static 'img/profile_pic.png' %}" class="rounded-circle signup-profile-img" alt="Profile Pic"><br><br> -->
+							<h3>Sign Up</h3>
+							<form>
+								<div class="form-group">
+									
+									<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+									
+								</div>
+								<div class="form-group">
+									
+									<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+								</div>
+								<div class="form-group">
+									
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								</div>
+								<div class="form-group">
+									
+									<input type="number" class="form-control" id="exampleInputPassword1" placeholder="Contractor's license number">
+								</div>
+								<div class="form-group">
+									
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Grade of Contractor">
+								</div>
+								<div class="form-group">
+									
+									<input type="file" class="form-control" id="exampleInputPassword1" placeholder="Grade of Contractor">
+								</div>
+									<button type="submit" class="btn btn-primary"  ><a class="button" href="/screen3/" style="color: white">Sign up</button></a><br>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
