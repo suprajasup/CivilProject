@@ -10,7 +10,7 @@ djangorestframework==3.9.2
 gunicorn==19.9.0
 httpie==1.0.2
 idna==2.8
-numpy==1.16.2
+numpy==1.22.0
 oauthlib==3.0.1
 pandas==0.24.2
 pbr==5.1.2
